@@ -1,0 +1,21 @@
+.cards{
+    padding: 2%;
+    margin-left: 1%;
+}
+.card1 c1{
+    margin-left: 2%;
+    display: grid;
+    
+}
+.card2{
+    margin-left: 2%;
+}
+.c2{
+    /* margin-left: 2%;
+    display: grid; */
+    height: 180px;
+    width: 150px;
+}
+.card2 a{
+    margin-left: 2%;
+}

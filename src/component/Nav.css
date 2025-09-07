@@ -1,40 +1,52 @@
-.header{
-    position: fixed;
-    top: 0%;
-    right: 0%;
-    left: 0%;
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    padding: 20px 10%;
-    background: transparent 50%;
+    padding: 10px ;
+    background: gray;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    overflow: hidden; /* Added */
     
 }
-.navbar a{
+
+.navbar a {
     position: relative;
     font-size: 15px;
-    margin-left: 40px;
+    margin-left: 30px;
     padding-right: 4px;
     color: white;
     font-weight: 600;
 }
-.Logo{
-    
+
+.Logo {
     font-size: 32px;
     color: aliceblue;
     font-weight: 600;
+    margin-left: 4px;
 }
-.navbar a::before{
-    content:'';
+
+.navbar a::before {
+    content: '';
     position: absolute;
-    top: 100%;
+    bottom: 0; /* Changed from top: 100% */
     left: 0;
     width: 0;
     height: 2px;
     background: blue;
     transition: 800ms;
 }
-.navbar a:hover::before{
+
+.navbar a:hover::before {
     width: 100%;
+}
+.header a{
+text-decoration: none;
 }

@@ -36,12 +36,7 @@
     transform: rotate(360deg);
   }
 }
-.background-container {
-  background-image: url('./component/fotor_1756911772728.jpg'); /* Local image */
-  /* Or for an external URL: */
-  /* background-image: url('https://example.com/your-image.jpg'); */
-  background-size: cover;
-  background-position: center;
-  height: 150vh;
-  width: 120vw;
+.background-container{
+  background-image: url(https://images.pexels.com/photos/325944/pexels-photo-325944.jpeg);
 }
+
