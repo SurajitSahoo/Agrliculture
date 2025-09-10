@@ -13,9 +13,13 @@
 .c2{
     /* margin-left: 2%;
     display: grid; */
-    height: 180px;
+    height: 190px;
     width: 150px;
 }
 .card2 a{
     margin-left: 2%;
+}
+.B2{
+    /* padding: 10px; */
+    margin-left: 10%;
 }

@@ -1,16 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './Nav.css'
+import { ListGroup } from "reactstrap";
+import weather from "./weather";
 const Nav=()=>
 {
     return(
         <header className="header">
-            <a href="/" className="Logo">Agricrops</a>
+            <ListGroup>
+            <Link  className="Logo">Agricrops</Link>
             <nav className="navbar">
-                <a href = "/">Home</a>
-                <a href = "/">Crops</a>
-                <a href = "/">Weather</a>
-                <a href = "/">About</a>
+                <Link to = "/home" action>Home</Link>
+                <Link to = "/Crops" action>Crops</Link>
+                <Link to = "/weather">Weather</Link>
+                <Link to = "/about">About</Link>
             </nav>
+            </ListGroup>
         </header>
 
     )
