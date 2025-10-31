@@ -1,11 +1,10 @@
 import React from "react";
+import banner from './banner.jpg'
 import { Card,CardBody,CardText,CardTitle,CardImg} from "reactstrap";
 import {Button} from "reactstrap";
-import { Link } from "react-router-dom";
-import weather from "./weather";
 import { useNavigate } from 'react-router-dom';
-
-const Cards =()=>
+// import banner from './banner.jpg'
+const Home =()=>
 {
     const navigate = useNavigate();
     const handlePriceClick = () => 
@@ -13,9 +12,12 @@ const Cards =()=>
             navigate('/about'); // This replaces your weather function
             };
     return(
-        
-    
-    <div className=" flex space-between ml-3">
+        <div>
+        <div className="justify-center">
+            
+            <img src={banner} alt="Dash board"/>;
+        </div>
+        <div className=" flex space-between ml-3">
         <div className=" ml-5 py-3 px-3">
             <Card style={{ width: '16rem' }} className="bg-grey ">
                 <CardImg className="c1" varient='top' src="https://images.unsplash.com/photo-1437252611977-07f74518abd7?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
@@ -157,10 +159,7 @@ const Cards =()=>
 
         </div>
         </div>  
-        
-        
-    
-    
+        </div>
     )
 }
-export default Cards;
+export default Home;

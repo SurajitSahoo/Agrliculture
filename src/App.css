@@ -37,6 +37,8 @@
   }
 }
 .background-container{
-  background-image: url(https://images.pexels.com/photos/325944/pexels-photo-325944.jpeg);
+  background-color: #282c34;
+  
+  /* background-image: url(https://images.pexels.com/photos/325944/pexels-photo-325944.jpeg); */
 }
 
